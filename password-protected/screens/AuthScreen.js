@@ -6,7 +6,7 @@ const AuthScreen = ({ navigation }) => {
     const [ password, setPassword ] = useState('');
     const [ errorMessage, setError ] = useState(null);
     return (
-        <View style={{ flex: 1, marginTop: 120 }}>
+        <View style={{ flex: 1, marginTop: 120, alignItems: 'center' }}>
             <Text style={{ textAlign: 'center', margin: 10 }}>Write the password 🤔</Text>
             <TextInput
                 placeholder="password..."
@@ -35,7 +35,6 @@ const AuthScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     input: {
-        marginLeft: 30,
         borderWidth: 1,
         width: 300,
         height: 30,
@@ -43,7 +42,6 @@ const styles = StyleSheet.create({
     },
     errorMessage: {
         color: 'red',
-        textAlign: 'center',
     },
 });
 

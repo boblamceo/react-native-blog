@@ -7,7 +7,25 @@ const ChooseScreen = ({ navigation }) => {
             <Button
                 title="Date Picker"
                 onPress={() => {
-                    navigation.navigate('PassScreen');
+                    navigation.navigate('Date Picker');
+                }}
+            />
+            <Button
+                title="Camera"
+                onPress={() => {
+                    navigation.navigate('Camera');
+                }}
+            />
+            <Button
+                title="Dice"
+                onPress={() => {
+                    navigation.navigate('Dice');
+                }}
+            />
+            <Button
+                title="Coronavirus Tracker"
+                onPress={() => {
+                    navigation.navigate('Corona');
                 }}
             />
         </SafeAreaView>

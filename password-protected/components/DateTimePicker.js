@@ -29,7 +29,7 @@ export const DateTime = () => {
                 title="Submit"
                 onPress={() => {
                     if (regex.test(date.toString())) {
-                        navigate('ChooseScreen');
+                        navigate('Choose Your Project');
                     } else {
                         setError('wrong!!! are you invading this app???');
                     }
